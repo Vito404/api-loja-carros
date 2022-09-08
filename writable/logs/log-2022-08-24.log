@@ -1,0 +1,14 @@
+ERROR - 2022-08-24 11:48:07 --> Error connecting to the database: Unknown database 'api'
+CRITICAL - 2022-08-24 11:50:30 --> Cannot declare class App\Database\Migrations\Produtos, because the name is already in use
+in APPPATH\Database\Migrations\2022-07-27-170837_Produtos.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-08-24 11:51:05 --> Column 'descricao' cannot be null
+CRITICAL - 2022-08-24 12:50:09 --> Call to a member function save() on null
+in APPPATH\Controllers\Produtos.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Produtos->gravarProduto('$1')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-24 12:51:46 --> Column 'valor' cannot be null
+ERROR - 2022-08-24 12:53:00 --> Column 'valor' cannot be null
